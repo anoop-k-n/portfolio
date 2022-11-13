@@ -2,6 +2,7 @@ import { useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar"
+import Dotgroup from "./scenes/Dotgroup"
 
 function App() {
   const [selectedPage,setSelectedPage] = useState('home');
@@ -25,7 +26,14 @@ function App() {
         selectedPage = {selectedPage}
         setSelectedPage = {setSelectedPage}
       />
-      
+      <div className="w-5/6 mx-auto md:h-full">
+        {isAboveMediumScreens && (
+          <Dotgroup 
+            selectedPage = {selectedPage}
+            setSelectedPage = {setSelectedPage}
+          />
+        )}
+      </div>
     </div>
   );
 }
