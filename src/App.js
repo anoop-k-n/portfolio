@@ -7,6 +7,8 @@ import Landing from "./scenes/Landing"
 import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills"
 import Projects from "./scenes/Projects"
+import Contact from "./scenes/Contact";
+import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage,setSelectedPage] = useState('home');
@@ -46,6 +48,15 @@ function App() {
 
       <div>
         <Projects />
+      </div>
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
+        </motion.div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, desc }) => {
+const Project = ({ name, title, desc }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -23,7 +23,7 @@ const Project = ({ title, desc }) => {
   return (
     <motion.div variants={projectVariant} className="relative border-2 rounded-md">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
+        <p className="text-2xl font-playfair">{name}</p>
         <p className="mt-7">
             {desc}
         </p>
@@ -70,14 +70,12 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <Project title="portfolio" desc="desc" />
-          <Project title="musicplayer" desc="desc" />
-          <Project title="satellite" desc="desc" />
-
-          <Project title="headercompression" desc="desc" />
-          <Project title="agri" desc="desc" />
-
-          <Project title="dsa" desc="desc" />
+          <Project name="Personal Portfolio" title="portfolio" desc="A responsive webpage designed using React and Tailwind CSS." />
+          <Project name="Music Player" title="musicplayer" desc="A beautiful FOSS music player for playing local media on Android." />
+          <Project name="Satellite Imagery Analysis" title="satellite" desc="Satellite images are analysed using Machine Learning and road detection is performed." />
+          <Project name="IPv6 6LoWPAN Header Compression Implementation" title="headercompression" desc="The IPHC header compression mechanism was implemented and QoS factors were studied." />
+          <Project name="AI enabled resource planner for agriculture" title="agri" desc="Using Machine Learning, it predicts the need for micro as well as macronutirents along with moisture content." />
+          <Project name="Digital Signature Algorithm Implementation" title="dsa" desc="DSA schemes such as Elgamal and" />
         </motion.div>
       </div>
     </section>
