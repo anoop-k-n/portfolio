@@ -42,7 +42,7 @@ const MySkills = () => {
 
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32 col-span-2">
-        {/* EXPERIENCE */}
+        
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -64,7 +64,7 @@ const MySkills = () => {
           </div>
         </motion.div>
 
-        {/* INNOVATIVE */}
+
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -85,7 +85,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
         </motion.div>
-        {/* IMAGINATIVE */}
+
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"

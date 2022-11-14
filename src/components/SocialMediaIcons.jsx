@@ -18,6 +18,15 @@ const SocialMediaIcons = () => {
       >
         <img alt="instagram-link" src="../assets/instagram.png" />
       </a>
+
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href="https://github.com/anoop-k-n"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img alt="github-link" src={require("../assets/github4.png")} />
+      </a>
     </div>
   );
 };

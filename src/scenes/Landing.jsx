@@ -15,12 +15,12 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
+            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1] "
           >
             <img
               alt="profile-above-large-screen"
-              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-t-[400px]"
+              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] "
               src={require("./../assets/ProfilePic.png")}
             />
           </div>
@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            An aspiring web developer who dabbles in other coding areas like Android development.
+            An aspiring web developer who is passionate about technology.
           </p>
         </motion.div>
 
